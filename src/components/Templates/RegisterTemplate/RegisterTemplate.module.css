@@ -1,0 +1,7 @@
+.registerForm {
+  background-color: var(--white);
+  height: auto;
+  padding: 35px;
+  transition: margin-left 0.18s ease;
+  width: var(--halfwidth);
+}

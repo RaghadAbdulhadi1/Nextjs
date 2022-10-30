@@ -1,0 +1,7 @@
+.loginForm {
+  background-color: var(--white);
+  padding: 35px;
+  transition: margin-left 0.18s ease;
+  width: var(--halfwidth);
+  height: auto;
+}

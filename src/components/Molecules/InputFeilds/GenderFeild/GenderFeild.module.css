@@ -1,0 +1,24 @@
+.gender-label {
+  padding: 10px;
+}
+
+.checkboxes-gender {
+  position: relative;
+}
+
+.checkboxes-gender input[type="checkbox"] {
+  accent-color: var(--blue);
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.genderChoices {
+  color: var(--gray);
+  display: flex;
+  font-size: 20px;
+  gap: 30px;
+  justify-content: center;
+  margin-top: var(--margin);
+}

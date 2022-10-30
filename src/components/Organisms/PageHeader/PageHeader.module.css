@@ -1,0 +1,26 @@
+.pageHeader {
+  background-image: linear-gradient(
+    to right,
+    #325568,
+    #dde3e7
+  );
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.5em;
+  padding-left: 25px;
+}
+
+.colorsCount,
+.colorsNames {
+  font-size: 1em;
+  padding-left: 25px;
+}
+
+.user {
+  display: flex;
+  gap: 20px;
+}

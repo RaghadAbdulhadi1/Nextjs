@@ -1,0 +1,5 @@
+.registerButton {
+  align-items: flex-end;
+  display: flex;
+  gap: var(--margin);
+}

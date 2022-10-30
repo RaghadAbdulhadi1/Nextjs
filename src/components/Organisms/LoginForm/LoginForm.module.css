@@ -1,0 +1,5 @@
+.loginButton {
+  display: flex;
+  gap: var(--margin);
+  align-items: flex-end;
+}

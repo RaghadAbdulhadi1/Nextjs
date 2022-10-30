@@ -1,0 +1,40 @@
+.inputFeild {
+  height: 50px;
+  margin-top:40px;
+  position: relative;
+  width: var(--width);
+}
+
+.inputFeild input {
+  font-size: var(--fontsize);
+  height: 100%;
+  padding: 0 55px;
+  width: var(--width);
+}
+
+.svg1 {
+  background-color: var(--blue);
+  font-size: 20px;
+  height: 50px;
+  left: 0;
+  padding: 15px;
+  position: absolute;
+  top: var(--halfwidth);
+  transform: translateY(-50%);
+  width: 50px;
+}
+
+.errorMessage {
+  color: red;
+  display: none;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.inputFeild input:invalid[focused="true"]{
+  border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ .errorMessage {
+  display: block;
+}

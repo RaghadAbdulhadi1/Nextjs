@@ -1,0 +1,18 @@
+.button {
+  background-color: var(--blue);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  font-size: var(--fontsize);
+  font-weight: bold;
+  height: 50px;
+  margin-top: var(--margin);
+  text-transform: capitalize;
+  width: 100px;
+}
+
+.clickablesContainer {
+  display: flex;
+  gap: var(--margin);
+  align-items: flex-end;
+  margin-top: 10px;
+}

@@ -1,0 +1,67 @@
+.formPage {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.formPage {
+  --black: #000000;
+  --blue: #457b9d;
+  --fontsize: 15px;
+  --gray: #808080;
+  --margin: 25px;
+  --red: #af1515;
+  --white: #fff;
+  --width: 100%;
+  --left: -35px;
+  --halfwidth: 50%;
+}
+
+.formPage {
+  align-items: center;
+  background-color: var(--blue);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 50px;
+}
+
+.formsContainer {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+  max-width: 600px;
+  min-width: 250px;
+  overflow: hidden;
+  width: var(--width);
+}
+
+.formsContainer .forms {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  transition: height 0.2s ease;
+  width: 200%;
+}
+
+
+.registerForm {
+  background-color: var(--white);
+  padding: 35px;
+  transition: margin-left 0.18s ease;
+  width: var(--halfwidth);
+}
+
+.loginForm {
+  background-color: var(--white);
+  padding: 35px;
+  transition: margin-left 0.18s ease;
+  width: var(--halfwidth);
+}
+
+
+@media only screen and (max-width: 400px) {
+  .formPage {
+    height: 130vh;
+  }
+}

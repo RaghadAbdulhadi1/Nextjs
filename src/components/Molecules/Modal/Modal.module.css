@@ -1,0 +1,75 @@
+.modal-background {
+  background-color: var(--blue);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  padding: 20px;
+}
+
+.modal-container {
+  text-align: end;
+  width: 50%;
+  min-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: var(--white);
+}
+
+.modal-title {
+  font-size: 3vh;
+  text-align: center;
+  color: var(--blue);
+  padding: 15px;
+}
+
+.modal-container button {
+  background-color: var(--blue);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  font-size: var(--fontsize);
+  font-weight: bold;
+  height: 40px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  width: 40px;
+}
+
+.footer button {
+  background-color: var(--blue);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  font-size: var(--fontsize);
+  font-weight: bold;
+  height: 50px;
+  text-transform: capitalize;
+  width: 100px;
+}
+
+@media only screen and (max-width: 400px) {
+  .modal-background {
+    height: 130vh;
+  }
+}
+
+.terms-text {
+  text-align: center;
+  padding: 20px;
+}
+
+.reject-text {
+  color: red;
+  text-align: center;
+}
