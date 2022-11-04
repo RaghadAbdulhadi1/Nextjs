@@ -1,15 +1,16 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 
 interface InputProps {
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   id: number;
   name: string;
-  type: string;
-  placeholder: string;
-  value: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onBlur: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onFocus: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onKeyUp: (event: React.KeyboardEvent) => void;
   password: string;
-  handleFocus: React.FormEventHandler<HTMLInputElement> | undefined;
-  focused: boolean
+  placeholder: string;
+  type: string;
+  value: string;
 }
 
 const Input: FC<InputProps> = ({
@@ -20,17 +21,19 @@ const Input: FC<InputProps> = ({
   placeholder,
   value,
   password,
-  focused,
-  handleFocus,
+  onKeyUp,
+  onBlur,
+  onFocus,
   ...inputs
 }: InputProps): JSX.Element => {
-
-  const patterns = {
-    password: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
-    username: "^[A-Za-z0-9]{3,16}$",
-    confirmPassword: password,
-  };
+  const onBlurAny = () => {
+    console.log("bu")
+  }
+  const onFocusAny = () => {
+    console.log("bu")
+  }
   return (
+
     <input
       onChange={onChange}
       key={id}
@@ -38,13 +41,12 @@ const Input: FC<InputProps> = ({
       type={type}
       placeholder={placeholder}
       value={value}
-      pattern={patterns[name]}
-      onBlur={handleFocus}
-      focused={focused.toString()}
+      onBlur={name==="password"? onBlur : onBlurAny}
+      onFocus={name==="password" ? onFocus : onFocusAny}
+      onKeyUp={onKeyUp}
       {...inputs}
     ></input>
   );
 };
 
 export default Input;
-

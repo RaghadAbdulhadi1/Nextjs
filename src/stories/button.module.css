@@ -1,0 +1,35 @@
+.storybookButton {
+  background-color: rgb(255, 247, 0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  font-size: var(--fontsize);
+  font-weight: bold;
+  height: 50px;
+  margin-top: var(--margin);
+  text-transform: capitalize;
+  width: 100px;
+}
+
+.storybookButtonAdd {
+  background-color: rgb(13, 93, 56);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  font-size: var(--fontsize);
+  font-weight: bold;
+  height: 50px;
+  margin-top: var(--margin);
+  text-transform: capitalize;
+  width: 100px;
+}
+
+.storybookButtonRemove {
+  background-color: red;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  font-size: var(--fontsize);
+  font-weight: bold;
+  height: 50px;
+  margin-top: var(--margin);
+  text-transform: capitalize;
+  width: 100px;
+}

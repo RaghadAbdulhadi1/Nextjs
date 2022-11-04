@@ -1,6 +1,6 @@
 .inputFeild {
   height: 50px;
-  margin-top:40px;
+  margin-top:35px;
   position: relative;
   width: var(--width);
 }
@@ -24,17 +24,11 @@
   width: 50px;
 }
 
-.errorMessage {
-  color: red;
-  display: none;
-  font-size: 12px;
-  padding: 8px;
-}
-
-.inputFeild input:invalid[focused="true"]{
-  border: 1px solid red;
+/* .inputFeild input:invalid[focused="true"]{
+  border: 1px solid var(--red);
 }
 
 input:invalid[focused="true"] ~ .errorMessage {
   display: block;
-}
+} */
+

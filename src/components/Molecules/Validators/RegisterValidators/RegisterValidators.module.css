@@ -1,0 +1,68 @@
+.successFailure,
+.passwordFailure,
+.userFailure,
+.confirmFailure {
+  color: var(--black);
+  display: none;
+  padding-left: 60px;
+  width: var(--width);
+}
+
+.successSucc,
+.passwordSucc,
+.userSucc,
+.confirmSucc,
+.existsSucc {
+  font-size: 13px;
+  display: block;
+  padding-left: 60px;
+  width: var(--width);
+}
+
+.outPasswordValidation,
+.outUsernameValidation,
+.outEmailValidation {
+  display: none;
+}
+
+.onPasswordValidation,
+.onUserValidation,
+.onEmailValidation {
+  display: block;
+}
+
+.valid {
+  font-size: 13px;
+  color: #155c15;
+}
+
+.valid:before {
+  margin-right: 20px;
+  content: "✔";
+  /* left: var(--left); */
+  position: relative;
+}
+
+.invalid {
+  font-size: 13px;
+  color: var(--red);
+}
+
+.invalid:before {
+  margin-right: 13px;
+  content: "✖";
+  /* left: var(--left); */
+  position: relative;
+}
+
+.userNameHeader {
+  font-size: 12px;
+}
+
+.passwordHeader {
+  font-size: 12px;
+}
+
+.emailHeader {
+  font-size: 12px;
+}

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import FormFeild from "components/Molecules/InputFeilds/FormFeild/index";
 import FormFooter from "../Shared/FormFooter/index";
-
+import LoginValidator from "components/Molecules/Validators/LoginValidators/index";
 interface LoginFormProps {
   formType: string;
   handleLinkClick: React.MouseEventHandler<HTMLAnchorElement>;
@@ -11,6 +11,9 @@ interface LoginFormProps {
   password: string;
   values: object;
   withIcon: boolean;
+  isValidatedEmail: boolean;
+  isValidatedPassword: boolean;
+  isValidatedLogin: boolean
 }
 
 const LoginForm: FC<LoginFormProps> = ({
@@ -21,9 +24,12 @@ const LoginForm: FC<LoginFormProps> = ({
   onChange,
   password,
   values,
+  isValidatedEmail,
+  isValidatedPassword,
+  isValidatedLogin
 }): JSX.Element => {
   return (
-    <form onSubmit={handleSubmit} className={formType}>
+    <form noValidate onSubmit={handleSubmit} className={formType}>
       {inputs.map((input): JSX.Element => {
         return (
           <FormFeild
@@ -38,6 +44,8 @@ const LoginForm: FC<LoginFormProps> = ({
             type={input.type}
             value={values[input.name]}
             withIcon={true}
+            isValidatedEmail={isValidatedEmail}
+            isValidatedPassword={isValidatedPassword}
             {...input}
           />
         );
@@ -46,6 +54,11 @@ const LoginForm: FC<LoginFormProps> = ({
         formType={formType}
         handleLinkClick={handleLinkClick}
         textLink={false}
+      />
+      <LoginValidator
+        isValidatedEmail={isValidatedEmail}
+        isValidatedPassword={isValidatedPassword}
+        isValidatedLogin={isValidatedLogin}
       />
     </form>
   );

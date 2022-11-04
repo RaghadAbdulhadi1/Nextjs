@@ -1,0 +1,68 @@
+.successFailure,
+.passwordFailure,
+.userFailure,
+.confirmFailure {
+  background: var(--white);
+  color: var(--black);
+  display: none;
+  margin-top: var(--margin);
+  padding-left: 60px;
+  width: var(--width);
+}
+
+.outValidation,
+.usernameValidation,
+.emailValidation {
+  background: var(--white);
+  color: var(--black);
+  display: none;
+  margin-top: var(--margin);
+  padding-left: 60px;
+  width: var(--width);
+}
+
+.successSucc,
+.passwordSucc,
+.userSucc,
+.confirmSucc,
+.existsSucc,
+.emptyFeildsSucc {
+  background: var(--white);
+  color: var(--black);
+  color: var(--red);
+  display: block;
+  margin-top: var(--margin);
+  padding-left: 60px;
+  width: var(--width);
+}
+
+.onValidation,
+.onUserValidation,
+.onEmailValidation {
+  background: var(--white);
+  color: var(--black);
+  display: block;
+  margin-top: var(--margin);
+  padding-left: 60px;
+  width: var(--width);
+}
+
+.valid {
+  color: #155c15;
+}
+
+.valid:before {
+  content: "✔";
+  left: var(--left);
+  position: relative;
+}
+
+.invalid {
+  color: var(--red);
+}
+
+.invalid:before {
+  content: "✖";
+  left: var(--left);
+  position: relative;
+}
